@@ -3,7 +3,14 @@ package edu.dosw.parcial;
 public class App {
 
     public static void main(String[] args) {
-        System.out.println("funciona");
+        Validator chain = new DisponibilidadFranjaValidator();
+
+        chain.setNext(new BarberoDisponibleValidator())
+            .setNext(new DatosClienteValidator())
+            .setNext(new ServicioPermitidoValidator())
+            .setNext(new PasarelaPagoValidator());
+
+        chain.validate(null);
     }
     
 }
