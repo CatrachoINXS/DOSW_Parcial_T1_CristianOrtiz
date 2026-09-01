@@ -16,6 +16,7 @@ Acceso a figma:
 
 ![](docs/images/DiagramaContexto.png)
 
+---
 
 ## Parcial parte 2 (requerimientos del sistema)
 
@@ -24,7 +25,7 @@ Acceso a figma:
 | Codigo | Descripcion |
 |:---|:---|
 | BB-01 | Un turno debe pasar por las siguientes validaciones (Disponibilidad de franja -> Barbero disponible -> Datos del cliente -> Servicio permitido -> Pasarela de pago) |
-| BB-02 | Asignar barberos segun disponibilidad |
+| BB-02 | Reservar unicamente los servicios del catalogo activo |
 | BB-03 | Procesar pagos a través de diferentes plataformas |
 
 > Nota: BB-01 utiliza Chain of Responsibility y BB-03 utiliza Adapter.
@@ -36,3 +37,12 @@ Acceso a figma:
 |:---|:---|
 | BB-RNF-01 | La web debe tener los colores de la marca Azul (#1B2A4A) y Rojo oscuro (#7B2D2D)  |
 | BB-RNF-02 | La tipografia debe ser Calibri. |
+
+---
+
+
+## Parcial parte 3 (diagramas de casos de uso)
+
+> **Requerimientos seleccionados:** BB-01, BB-03.
+
+![](docs/images/DCasosUso1.png)
