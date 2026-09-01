@@ -40,9 +40,22 @@ Acceso a figma:
 
 ---
 
-
 ## Parcial parte 3 (diagramas de casos de uso)
 
 > **Requerimientos seleccionados:** BB-01, BB-03.
 
 ![](docs/images/DCasosUso1.png)
+
+---
+
+## Parcial parte 6 (patrones)
+
+- **a.** 1. Nombre del patron: Chain of Responsibility. Tipo: Comportamiento.
+    2. Nombre del patron: Adapter. Tipo: Estructural
+
+- **b.** En el contexto de Bob's Barber se utiliza en la parte donde se hacen las validaciones de los turnos. Estas validaciones se hacen de manera independiente y cuando una acaba pasa a la siguiente validacion (cadena de validaciones). Chain of Responsibility nos permite eso, tener multiples handler que nos permitan hacer dichas validaciones, delegando al siguiente de la cadena. Por otro lado, el patron Adapter se utiliza en las pasarelas de pago, como cada una tiene interfaces incompatibles, lo ideal seria tener un adaptador para cada una de modo que nuestro sistema pueda realizar la transaccion sin necesidad de conocer la implementacion de los proveedores.
+
+- **c.** Diagrama de clases
+
+![](docs/images/DiagramaClases.png)
+
